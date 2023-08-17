@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { FoodService } from '../services/food/food.service';
+import { Foods } from '../shared/models/food';
+// import { StarRatingComponent } from 'ng-starrating';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +10,7 @@ import { FoodService } from '../services/food/food.service';
 })
 export class HomeComponent {
 
-  foods: string[] = [];
+  foods: Foods[] = [];
 
   constructor(private fs: FoodService) {
   }
